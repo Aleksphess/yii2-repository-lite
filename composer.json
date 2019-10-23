@@ -1,0 +1,38 @@
+{
+  "name": "aleksphess/yii2-repository-lite",
+  "description": "Repositories for Yii2 Lite Version",
+  "keywords": ["library", "repository", "model"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aleksphess",
+      "email": "aleksphesspor@gmail.com"
+    }
+  ],
+  "repositories":[
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "yiisoft/yii2": "^2.0.13",
+    "yiisoft/yii2-mongodb": "^2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Aleksphess\\Repository\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aleksphess\\Repository\\Test\\": "tests",
+      "Aleksphess\\Repository\\Example\\": "example"
+    }
+  }
+}
